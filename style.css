@@ -8,6 +8,8 @@
 
 body {
     background-color: rgb(209, 227, 231);
+    min-width: 50vh;
+    max-width: 200vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +22,7 @@ body {
 
 ul {
     list-style: none;
-    width: 60%;
+    width: 45%;
 }
 
 h2 {
@@ -49,8 +51,6 @@ li {
 }
 
 .topic {
-    overflow: hidden;
-    transition: 2s;
     display: none;
 }
 
@@ -64,19 +64,10 @@ p {
 
 /* display after click*/
 
-.active li {
-    display: flex;
-    flex-direction: column;
-}
-
 .active .subject {
     background-color: white;
     border-radius: 40px 40px 0px 0px;
     color: black;
-}
-
-.active h2 {
-    padding-left: 2%;
 }
 
 .active #plus {
